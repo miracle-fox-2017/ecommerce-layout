@@ -177,8 +177,8 @@ html, body {
   width: 80%;
   margin: auto;
   display: none;
-  position: fixed;
   overflow: hidden;
+  position: absolute;
   background-color: #FFF;
   border-radius: 0 0 10px 10px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
