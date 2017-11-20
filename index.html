@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My template</title>
+    <meta name="description" content="My template">
+    	<link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+    <!-- style -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+      <link rel="stylesheet" href="./assets/style/style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+</head>
+<body>
+
+  <div class="ui fluid container">
+      <div class="ui column row grid centered header-info">
+        <div class="thirteen wide column header-list">
+          <div class="ui horizontal stackable list">
+            <div class="item">
+              <i class="warning icon"></i>
+              Pusat Bantuan
+            </div>
+            <div class="item">
+              <i class="call icon"></i>
+              +6283728736452
+            </div>
+            <div class="item">
+              <i class="mail icon"></i>
+              support@store.com
+            </div>
+          </div>
+          <div class="ui horizontal list right floated">
+            <div class="item">
+              <i class="map pin icon"></i>
+              Bandung, Indonesia.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui two column stackable grid centered">
+          <div class="three wide column middle aligned">
+            <img class="logo-img" src="./assets/img/logo.png" alt="logo picture">
+          </div>
+          <div class="eight wide column middle aligned">
+            <div class="ui fluid action left icon large input">
+              <i class="search icon"></i>
+              <input placeholder="Search..." type="text">
+              <div class="ui primary button">Cari Produk</div>
+            </div>
+          </div>
+          <div class="three wide column middle aligned">
+            <div class="ui button right">
+              Daftar
+            </div>
+            <div class="ui primary button" id="login-modal">
+              Login
+            </div>
+          </div>
+      </div>
+      <div class="ui centered column row grid top-space">
+        <div class="fourteen wide column">
+            <div class="ui large borderless stackable menu">
+              <div class="ui compact dropdown link item">
+                <i class="sidebar icon"></i>
+                <div class="menu">
+                  <div class="header">Kategori</div>
+                  <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Hijacket</span>
+                    <div class="menu">
+                      <div class="header">Sample</div>
+                      <div class="header">Sample</div>
+                      <div class="header">Sample</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Pilot</span>
+                    <div class="menu">
+                      <div class="header">Sample</div>
+                      <div class="header">Sample</div>
+                      <div class="header">Sample</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Premium Basic</span>
+                    <div class="menu">
+                      <div class="header">Sample</div>
+                      <div class="header">Sample</div>
+                      <div class="header">Sample</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Hoodie Combi</span>
+                    <div class="menu">
+                      <div class="header">Sample</div>
+                      <div class="header">Sample</div>
+                      <div class="header">Sample</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Sweater</span>
+                    <div class="menu">
+                      <div class="header">Sample</div>
+                      <div class="header">Sample</div>
+                      <div class="header">Sample</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Synth Leather</span>
+                    <div class="menu">
+                      <div class="header">Sample</div>
+                      <div class="header">Sample</div>
+                      <div class="header">Sample</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="active item">BERANDA</a>
+              <a class="item">PROMO</a>
+              <a class="item">PRODUK BARU</a>
+              <a class="item">BELANJA</a>
+              <div class="right item">
+                <i class="shopping bag icon"></i>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="ui column row grid centered">
+        <div class="fourteen wide column images middle aligned">
+          <div class="slider">
+            <div>
+              <img class="ui fluid image" src="./assets/img/slide/slide1.jpg" alt="home pic">
+            </div>
+            <div>
+              <img class="ui fluid image" src="./assets/img/slide/slide2.jpg" alt="home pic">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui centered row grid">
+        <div class="fourteen wide column">
+          <img style="width:100%" src="./assets/img/ads.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="ui centered row grid">
+        <div class="fourteen wide column">
+          <h2 class="ui dividing header">Produk<a class="anchor" id="states"></a></h2>
+          <div class="ui five cards">
+            <a class="card" id="add-cart">
+              <div class="image">
+                <img src="./assets/img/product/hj-camoflashion-alpine.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Hijacket Camouflase</div>
+                <div class="description">
+                  Alpine
+                </div>
+              </div>
+              <div id="add-cart" class="ui bottom primary attached button">
+                <i class="add to cart icon"></i>
+                Beli
+              </div>
+            </a>
+            <a class="card" id="add-cart">
+              <div class="image">
+                <img src="./assets/img/product/hj-camoflashion-rosepink.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Hijacket Camouflase</div>
+                <div class="description">
+                  Rosepink
+                </div>
+              </div>
+              <div id="add-cart" class="ui bottom primary attached button">
+                <i class="add to cart icon"></i>
+                Beli
+              </div>
+            </a>
+            <a class="card">
+              <div class="image">
+                <img src="./assets/img/product/hj-camoflashion-royal-blue.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Hijacket Camouflase</div>
+                <div class="description">
+                  Royal Blue
+                </div>
+              </div>
+              <div id="add-cart" class="ui bottom primary attached button">
+                <i class="add to cart icon"></i>
+                Beli
+              </div>
+            </a>
+            <a class="card">
+              <div class="image">
+                <img src="./assets/img/product/hj-camoflashion-ruby.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Hijacket Camouflase</div>
+                <div class="description">
+                  Ruby
+                </div>
+              </div>
+              <div id="add-cart" class="ui bottom primary attached button">
+                <i class="add to cart icon"></i>
+                Beli
+              </div>
+            </a>
+            <a class="card">
+              <div class="image">
+                <img src="./assets/img/product/hj-cf-sky-blue.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Hijacket Camouflase</div>
+                <div class="description">
+                  Sky Blue
+                </div>
+              </div>
+              <div id="add-cart" class="ui bottom primary attached button">
+                <i class="add to cart icon"></i>
+                Beli
+              </div>
+            </a>
+            <a class="card">
+              <div class="image">
+                <img src="./assets/img/product/CM-MEN.png">
+              </div>
+              <div class="content">
+                <div class="header">Hijacket Camouflase</div>
+                <div class="description">
+                  Sky Blue
+                </div>
+              </div>
+              <div id="add-cart" class="ui bottom primary attached button">
+                <i class="add to cart icon"></i>
+                Beli
+              </div>
+            </a>
+            <a class="card">
+              <div class="image">
+                <img src="./assets/img/product/EF-MEN.png">
+              </div>
+              <div class="content">
+                <div class="header">Hijacket Camouflase</div>
+                <div class="description">
+                  Sky Blue
+                </div>
+              </div>
+              <div id="add-cart" class="ui bottom primary attached button">
+                <i class="add to cart icon"></i>
+                Beli
+              </div>
+            </a>
+            <a class="card">
+              <div class="image">
+                <img src="./assets/img/product/flop.jpg">
+              </div>
+              <div class="content">
+                <div class="header">Hijacket Camouflase</div>
+                <div class="description">
+                  Sky Blue
+                </div>
+              </div>
+              <div id="add-cart" class="ui bottom primary attached button">
+                <i class="add to cart icon"></i>
+                Beli
+              </div>
+            </a>
+            <a class="card">
+              <div class="image">
+                <img src="./assets/img/product/JMP12.png">
+              </div>
+              <div class="content">
+                <div class="header">Hijacket Camouflase</div>
+                <div class="description">
+                  Sky Blue
+                </div>
+              </div>
+              <div id="add-cart" class="ui bottom primary attached button">
+                <i class="add to cart icon"></i>
+                Beli
+              </div>
+            </a>
+            <a class="card">
+              <div class="image">
+                <img src="./assets/img/product/TWISTER.png">
+              </div>
+              <div class="content">
+                <div class="header">Hijacket Camouflase</div>
+                <div class="description">
+                  Sky Blue
+                </div>
+              </div>
+              <div id="add-cart" class="ui bottom primary attached button">
+                <i class="add to cart icon"></i>
+                Beli
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="ui grid centered">
+    <div class="column grey email-sub middle aligned">
+      <h2 style="margin-top: 30px;" class="header">Pingin Tau Penawaran Eksklusif Lainnya ?</h2>
+      <div class="ui action large input">
+        <input placeholder="Berlangganan Info Terbaru..." type="text">
+        <button class="ui button primary">Berlanganan</button>
+      </div>
+    </div>
+  </div>
+  <div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+      <div class="ui stackable inverted centered divided grid">
+        <div class="three wide column center aligned">
+          <h4 class="ui inverted header">Bhinfinix Store</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Tentang Kami</a>
+            <a href="#" class="item">Cara Pemesanan</a>
+            <a href="#" class="item">Hubungi Kami</a>
+            <a href="#" class="item">Konfirmasi Pembayaran</a>
+          </div>
+        </div>
+        <div class="three wide column center aligned">
+          <h4 class="ui inverted header">Porduk</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Terlaris</a>
+            <a href="#" class="item">Terbaru</a>
+            <a href="#" class="item">Promo</a>
+            <a href="#" class="item">Pupoler</a>
+          </div>
+        </div>
+        <div class="three wide column center aligned">
+          <h4 class="ui inverted header">Member Area</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Login</a>
+            <a href="#" class="item">Profile</a>
+            <a href="#" class="item">Riwayat Transaksi</a>
+          </div>
+        </div>
+      </div>
+      <div class="ui inverted section divider"></div>
+      <img style="height:50px;width:auto;" class="ui centered mini image" src="./assets/img/logo.png" alt="logo picture">
+      <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="#">Site Map</a>
+        <a class="item" href="#">Contact Us</a>
+        <a class="item" href="#">Terms and Conditions</a>
+        <a class="item" href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+  <div class="ui tiny modal">
+    <div style="margin:20px 0 20px 0;" class="ui centered grid">
+
+      <div class="thirteen wide column">
+        <h2 class="ui teal image header">
+          <div class="content">
+            Log-in ke Akun Anda
+          </div>
+        </h2>
+        <div class="field">
+          <div class="ui left icon fluid input">
+            <i class="user icon"></i>
+            <input name="email" placeholder="E-mail address" type="text">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon fluid input">
+            <i class="lock icon"></i>
+            <input name="password" placeholder="Password" type="password">
+          </div>
+        </div>
+        <br>
+        <div class="ui fluid large teal submit button">Login</div><br>
+        <div class="ui fluid large facebook button">
+          <i class="facebook icon"></i>
+          Login dengan Facebook
+        </div>
+
+        <div class="ui message">
+          Belum Punya Akun? <a href="#">Daftar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</html>
