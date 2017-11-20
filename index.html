@@ -14,22 +14,27 @@
 
     <nav class="navbar navbar-default">
       <div class="container-fluid">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><span class="glyphicon glyphicon-user"></span> Daftar</a></li>
           <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Cart</a></li>
-          <li><a href="#"> Checkout</a></li>
+          <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Checkout</a></li>
         </ul>
       </div>
     </nav>
 
     <header class="page-header">
       <div class="container text-center">
-        <h1>Book dj</h1>
+        <h1>Book dj Store</h1>
       </div>
     </header>
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid kontainer">
       <div class="row content">
 
         <div class="col-sm-3 sidenav" id="sidebar">
@@ -37,11 +42,12 @@
             <h3>Category</h3>
           </div>
           <div class="col-sm-12">
-            <ul>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Application Development</a></li>
-              <li><a href="#">Hardware Creative</a></li>
-              <li><a href="#">Networking and Server</a></li>
+            <ul class="nav nav-pills nav-stacked">
+              <li role="presentation"><a href="#">Web Development</a></li>
+              <li role="presentation"><a href="#">Game Development</a></li>
+              <li role="presentation"><a href="#">Networking and Server</a></li>
+              <li role="presentation"><a href="#">Hardware and Creation</a></li>
+              <li role="presentation"><a href="#">Bussiness Intelligence</a></li>
             </ul>
           </div>
         </div>
@@ -52,7 +58,7 @@
 
           <div class="row">
             <div class="col-sm-3">
-              <div class="thumbnail">
+              <div class="thumbnail text-center">
                 <a href="#">
                   <img src="img/7037-ne.png" alt="">
                   <div class="caption">
@@ -60,11 +66,11 @@
                   </div>
                 </a>
                 <p>$28.00</p>
-                <p><a href="#">add to cart</a></p>
+                <p><button type="button" class="btn btn-success">add to cart</button></p>
               </div>
             </div>
             <div class="col-sm-3">
-              <div class="thumbnail">
+              <div class="thumbnail text-center">
                 <a href="#">
                   <img src="img/9781787125933.png" alt="">
                   <div class="caption">
@@ -72,11 +78,11 @@
                   </div>
                 </a>
                 <p>$28.00</p>
-                <p><a href="#">add to cart</a></p>
+                <p><button type="button" class="btn btn-success">add to cart</button></p>
               </div>
             </div>
             <div class="col-sm-3">
-              <div class="thumbnail">
+              <div class="thumbnail text-center">
                 <a href="#">
                   <img src="img/B06510_MockupCover_0.png" alt="">
                   <div class="caption">
@@ -84,11 +90,11 @@
                   </div>
                 </a>
                 <p>$28.00</p>
-                <p><a href="#">add to cart</a></p>
+                <p><button type="button" class="btn btn-success">add to cart</button></p>
               </div>
             </div>
             <div class="col-sm-3">
-              <div class="thumbnail">
+              <div class="thumbnail text-center">
                 <a href="#">
                   <img src="img/B09397_MockupCover.png" alt="">
                   <div class="caption">
@@ -96,14 +102,14 @@
                   </div>
                 </a>
                 <p>$28.00</p>
-                <p><a href="#">add to cart</a></p>
+                <p><button type="button" class="btn btn-success">add to cart</button></p>
               </div>
             </div>
           </div>
 
           <div class="row">
             <div class="col-sm-3">
-              <div class="thumbnail">
+              <div class="thumbnail text-center">
                 <a href="#">
                   <img src="img/7037-ne.png" alt="">
                   <div class="caption">
@@ -111,11 +117,11 @@
                   </div>
                 </a>
                 <p>$28.00</p>
-                <p><a href="#">add to cart</a></p>
+                <p><button type="button" class="btn btn-success">add to cart</button></p>
               </div>
             </div>
             <div class="col-sm-3">
-              <div class="thumbnail">
+              <div class="thumbnail text-center">
                 <a href="#">
                   <img src="img/9781787125933.png" alt="">
                   <div class="caption">
@@ -123,11 +129,11 @@
                   </div>
                 </a>
                 <p>$28.00</p>
-                <p><a href="#">add to cart</a></p>
+                <p><button type="button" class="btn btn-success">add to cart</button></p>
               </div>
             </div>
             <div class="col-sm-3">
-              <div class="thumbnail">
+              <div class="thumbnail text-center">
                 <a href="#">
                   <img src="img/B06510_MockupCover_0.png" alt="">
                   <div class="caption">
@@ -135,11 +141,11 @@
                   </div>
                 </a>
                 <p>$28.00</p>
-                <p><a href="#">add to cart</a></p>
+                <p><button type="button" class="btn btn-success">add to cart</button></p>
               </div>
             </div>
             <div class="col-sm-3">
-              <div class="thumbnail">
+              <div class="thumbnail text-center">
                 <a href="#">
                   <img src="img/B09397_MockupCover.png" alt="">
                   <div class="caption">
@@ -147,14 +153,14 @@
                   </div>
                 </a>
                 <p>$28.00</p>
-                <p><a href="#">add to cart</a></p>
+                <p><button type="button" class="btn btn-success">add to cart</button></p>
               </div>
             </div>
           </div>
 
           <div class="row">
             <div class="col-sm-3">
-              <div class="thumbnail">
+              <div class="thumbnail text-center">
                 <a href="#">
                   <img src="img/7037-ne.png" alt="">
                   <div class="caption">
@@ -162,11 +168,11 @@
                   </div>
                 </a>
                 <p>$28.00</p>
-                <p><a href="#">add to cart</a></p>
+                <p><button type="button" class="btn btn-success">add to cart</button></p>
               </div>
             </div>
             <div class="col-sm-3">
-              <div class="thumbnail">
+              <div class="thumbnail text-center">
                 <a href="#">
                   <img src="img/9781787125933.png" alt="">
                   <div class="caption">
@@ -174,11 +180,11 @@
                   </div>
                 </a>
                 <p>$28.00</p>
-                <p><a href="#">add to cart</a></p>
+                <p><button type="button" class="btn btn-success">add to cart</button></p>
               </div>
             </div>
             <div class="col-sm-3">
-              <div class="thumbnail">
+              <div class="thumbnail text-center">
                 <a href="#">
                   <img src="img/B06510_MockupCover_0.png" alt="">
                   <div class="caption">
@@ -186,11 +192,11 @@
                   </div>
                 </a>
                 <p>$28.00</p>
-                <p><a href="#">add to cart</a></p>
+                <p><button type="button" class="btn btn-success">add to cart</button></p>
               </div>
             </div>
             <div class="col-sm-3">
-              <div class="thumbnail">
+              <div class="thumbnail text-center">
                 <a href="#">
                   <img src="img/B09397_MockupCover.png" alt="">
                   <div class="caption">
@@ -198,18 +204,51 @@
                   </div>
                 </a>
                 <p>$28.00</p>
-                <p><a href="#">add to cart</a></p>
+                <p><button type="button" class="btn btn-success">add to cart</button></p>
               </div>
             </div>
           </div>
-
+          <nav aria-label="Page navigation">
+            <ul class="pagination pagination-lg">
+              <li>
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
+
 
       </div>
     </div>
 
-    <div id="main"></div>
 
-    <div id="footer"></div>
+      <div class="container-fluid background-grey">
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <h4>Contact us</h4>
+            <p>Get in touch here if you have any queries or issues.</p>
+          </div>
+          <div class="col-sm-4 text-center">
+            <h4>Help & Support</h4>
+            <p>Click here for FAQs, order information, T&Cs, errata and code downloads.</p>
+          </div>
+          <div class="col-sm-4 text-center">
+            <h4>Alerts & Offers</h4>
+            <p>Sign up to our emails for regular updates, bespoke offers, exclusive discounts and great free content.</p>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
