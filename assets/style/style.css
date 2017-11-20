@@ -16,7 +16,7 @@
 }
 
 .email-sub {
-  margin-top: 20px;
+  margin-top: 50px;
   height: 200px;
 }
 
@@ -43,4 +43,12 @@ div.images img{
   position: absolute;
   height: 100%;
   margin: auto;
+}
+
+div.leftside img {
+  width:100%;
+}
+
+.bx-controls-direction {
+    margin-top: -60px;
 }
