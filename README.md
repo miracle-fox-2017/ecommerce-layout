@@ -11,5 +11,5 @@
 #### Live version
 
 ```
-https://tomybudiman.github.io/e-commerce-ui
+https://tomybudiman.github.io/e-commerce-ui/public
 ```
