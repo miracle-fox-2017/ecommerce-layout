@@ -22,14 +22,35 @@ body {
   background-color: black;
 }
 
+.center-thumb {
+  height: 150px;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
 .featured {
   padding-top: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid lightgray;
 }
 
+.fluid {
+  width: 80%;
+}
+
 .item {
   padding-top: 15px;
+}
+
+.card {
+  padding-top: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.desc {
+  min-height: 150px;
 }
 
 .featured .title {
@@ -56,4 +77,12 @@ ul.nolist {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .center-thumb {
+    height: 200px;
+    background-size: 100%;
+    background-color: black;
+  }
 }
