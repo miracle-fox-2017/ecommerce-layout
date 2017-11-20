@@ -16,6 +16,7 @@
 }
 
 main.content {
+	position: relative;
 	margin-top: 3rem;
 }
 
@@ -52,7 +53,7 @@ main.content {
 .footer {
 	padding: 1rem;
 	text-align: center;
-	background: #00BCD4;
+	background: #d71149;
 	color: #fff;
 }
 
@@ -81,7 +82,8 @@ main.content {
 }
 
 .cart-item img {
-	max-width: 100%;
+	width: 100px;
+	height: 100px;
 }
 
 .cancle-cart {

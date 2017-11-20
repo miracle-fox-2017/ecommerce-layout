@@ -34,7 +34,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-             <a class="navbar-brand site-title" href="index.html">SumberVoucher</a>
+            <a class="navbar-brand site-title" href="index.html">SumberVoucher</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -76,75 +76,81 @@
 
     <div class="container">
       <main class="content">
-        <h2 class="h3 no-mt page-title">Cart</h2><!-- /.h3 page-title -->
+        <h2 class="h3 no-mt page-title">Checkout</h2><!-- /.h3 page-title -->
 
-        <div class="row">
-          <div class="col-md-8">
-            <div class="cart-wrapper">
-              <div class="cart-item">
+        <form action="#">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label>Nama</label>
+                <input type="text" class="form-control" placeholder="Nama" name="name" id="name" />
+              </div><!-- /.form-group -->
+
+              <div class="form-group">
+                <label>Alamat Email</label>
+                <input type="email" class="form-control" placeholder="Email" name="email" id="email" />
+              </div><!-- /.form-group -->
+
+              <div class="form-group">
+                <label>Telepon</label>
+                <input type="tel" class="form-control" placeholder="No. telephone" name="phone" id="phone" />
+              </div><!-- /.form-group -->
+
+              <hr />
+
+              <div class="form-group">
+                <label>Provinsi</label>
+                <input type="text" class="form-control" placeholder="Provinsi" name="province" id="province" />
+              </div><!-- /.form-group -->
+
+              <div class="form-group">
+                <label>Kota</label>
+                <input type="text" class="form-control" placeholder="Kota" name="city" id="city" />
+              </div><!-- /.form-group -->
+
+              <div class="form-group">
+                <label>Kode Post</label>
+                <input type="text" class="form-control" placeholder="Kode pos" name="postal_code" id="postal_code" />
+              </div><!-- /.form-group -->
+
+              <div class="form-group">
+                <label>Alamat</label>
+                <textarea class="form-control" name="address" id="addres" placeholder="Alamat Lengkap" rows="5" cols="3"></textarea>
+              </div><!-- /.form-group -->
+
+              <hr />
+
+              <div class="form-group">
+                <label>Metode Pembayaran</label>
+                <select class="form-control" name="payment_method" id="payment_method">
+                  <option value="">--Pilih Pembayaran--</option>
+                  <option value="bank_transfer">Transfer Bank</option>
+                  <option value="xendit">Xendit</option>
+                  <option value="midtrans">Midtrans</option>
+                  <option value="bitcoin">Bitcoin</option>
+                </select>
+              </div><!-- /.form-group -->
+            </div>
+
+            <div class="col-md-4">
+              <div class="pay-wrapper"  id="payment-area">
+                <h3 class="h4 no-mt" id="total-purchase">Ringkasan Belanja</h3><!-- /#total-purchase.h4 -->
+
                 <div class="row">
-                  <div class="col-md-2">
-                    <img src="images/xboxlive.jpg" alt="pic" />
-                  </div><!-- /.col-md-3 -->
-
-                  <div class="col-md-5">
-                    <h5 class="cart-item-title"><a href="#">Voucher Xbox Live $50</a></h5>
-                    <select name="qty">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </div><!-- /.col-md-6 -->
-
-                  <div class="col-md-4">
-                    <h5 class="cart-item-title">Rp. 500.000</h5>
-                  </div><!-- /.col-md-4 -->
-
-                  <div class="col-md-1">
-                    <a href="#" class="cancle-cart">&#10006;</a>
-                  </div><!-- /.col-md-1 -->
+                  <div class="col-md-6">Total Harga:</div><!-- /.col-md-6 -->
+                  <div class="col-md-6"><h4 class="total-price no-mt"> Rp. 800.000</h4></div><!-- /.col-md-6 -->
                 </div><!-- /.row -->
-              </div><!-- /.cart-item -->
 
-              <div class="cart-item">
                 <div class="row">
-                  <div class="col-md-2">
-                    <img src="images/spotify.jpg" alt="pic" />
-                  </div><!-- /.col-md-3 -->
-
-                  <div class="col-md-5">
-                    <h5 class="cart-item-title"><a href="#">Voucher Spotify $30</a></h5>
-                    <select name="qty">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </div><!-- /.col-md-6 -->
-
-                  <div class="col-md-4">
-                    <h5 class="cart-item-title">Rp. 300.000</h5>
-                  </div><!-- /.col-md-4 -->
-
-                  <div class="col-md-1">
-                    <a href="#" class="cancle-cart">&#10006;</a>
-                  </div><!-- /.col-md-1 -->
+                  <div class="col-md-6">Ongkos kirim:</div><!-- /.col-md-6 -->
+                  <div class="col-md-6"><h4 class="total-price no-mt"> Rp. 10.000</h4></div><!-- /.col-md-6 -->
                 </div><!-- /.row -->
-              </div><!-- /.cart-item -->
-            </div><!-- /.cart-wrapper -->
-          </div>
 
-          <div class="col-md-4">
-            <div class="pay-wrapper">
-              <h3 class="h4 no-mt" id="total-purchase">Total Belanja</h3><!-- /#total-purchase.h4 -->
-              <div class="row">
-                <div class="col-md-6">Total Harga:</div><!-- /.col-md-6 -->
-                <div class="col-md-6"><h4 class="total-price no-mt"> Rp. 800.000</h4></div><!-- /.col-md-6 -->
-              </div><!-- /.row -->
-
-              <a href="checkout.html" class="btn btn-danger u-full-width">Checkout</a>
-            </div><!-- /.pay-wrapper -->
-          </div><!-- /.col-md-4 -->
-        </div><!-- /.row -->
+                <button class="btn btn-danger u-full-width">Bayar Pesanan</button>
+              </div><!-- /.pay-wrapper -->
+            </div><!-- /.col-md-4 -->
+          </div><!-- /.row -->
+        </form>
       </div><!-- /.col-md-8 -->
       </main><!-- /.content -->
     </div><!-- /.container -->

@@ -54,7 +54,7 @@
                   <li><a href="#">Spotify</a></li>
                 </ul>
               </li>
-              <li><a href="#">Semua Produk</a></li>
+              <li><a href="products.html">Semua Produk</a></li>
               <li><a href="cart.html">Cart</a></li>
               <li><a href="checkout.html">Checkout</a></li>
             </ul>
@@ -76,76 +76,158 @@
 
     <div class="container">
       <main class="content">
-        <h2 class="h3 no-mt page-title">Cart</h2><!-- /.h3 page-title -->
-
         <div class="row">
-          <div class="col-md-8">
-            <div class="cart-wrapper">
-              <div class="cart-item">
-                <div class="row">
-                  <div class="col-md-2">
-                    <img src="images/xboxlive.jpg" alt="pic" />
-                  </div><!-- /.col-md-3 -->
+          <div class="col-md-2">
+            <div class="widget">
+              <h3 class="no-mt h4 widget-title">Cari lebih detail</h3>
+              <hr />
+              <form action="#">
+                <h4 class="h5 no-mt">Kategori</h4><!-- /.no-mt -->
+                <ul class="flat-list">
+                  <li><input type="checkbox" name="cat_amazon" value="cat_amazon"> Amazon Gift Card</li>
+                  <li><input type="checkbox" name="itunes_card" value="itunes_card"> iTunes Gift Card</li>
+                  <li><input type="checkbox" name="google_play" value="google_play"> Google Play</li>
+                  <li><input type="checkbox" name="ebay_card" value="ebay_card"> Ebay Gift Card</li>
+                  <li><input type="checkbox" name="amazon_card" value="amazon_card"> Amazon</li>
+                  <li><input type="checkbox" name="steam_card" value="steam_card"> Steam</li>
+                  <li><input type="checkbox" name="blizzard_card" value="blizzard_card"> Blizzard Card</li>
+                  <li><input type="checkbox" name="xbox_live" value="xbox_live"> Xbox Live</li>
+                  <li><input type="checkbox" name="spotify_card" value="spotify_card"> Spotify</li>
+                </ul><!-- /.flat-list -->
 
-                  <div class="col-md-5">
-                    <h5 class="cart-item-title"><a href="#">Voucher Xbox Live $50</a></h5>
-                    <select name="qty">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </div><!-- /.col-md-6 -->
+                <hr />
+                <h4 class="h5 no-mt">Rentang Harga</h4><!-- /.no-mt -->
+                <div class="form-group">
+                  <input type="text" id="min_price" name="min_price" class="form-control"  placeholder="Harga Minimum" />
+                </div><!-- /.form-group -->
 
-                  <div class="col-md-4">
-                    <h5 class="cart-item-title">Rp. 500.000</h5>
-                  </div><!-- /.col-md-4 -->
+                <div class="form-group">
+                  <input type="text" id="max_price" name="max_price" class="form-control"  placeholder="Harga Maximum" />
+                </div>
 
-                  <div class="col-md-1">
-                    <a href="#" class="cancle-cart">&#10006;</a>
-                  </div><!-- /.col-md-1 -->
-                </div><!-- /.row -->
-              </div><!-- /.cart-item -->
+                <input type="submit" name="btn-filter" id="btn-filter" class="btn btn-danger" value="Filter Pencarian">
+              </form>
+            </div><!-- /.widget -->
+          </div><!-- /.col-md-3 -->
 
-              <div class="cart-item">
-                <div class="row">
-                  <div class="col-md-2">
-                    <img src="images/spotify.jpg" alt="pic" />
-                  </div><!-- /.col-md-3 -->
-
-                  <div class="col-md-5">
-                    <h5 class="cart-item-title"><a href="#">Voucher Spotify $30</a></h5>
-                    <select name="qty">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </div><!-- /.col-md-6 -->
-
-                  <div class="col-md-4">
-                    <h5 class="cart-item-title">Rp. 300.000</h5>
-                  </div><!-- /.col-md-4 -->
-
-                  <div class="col-md-1">
-                    <a href="#" class="cancle-cart">&#10006;</a>
-                  </div><!-- /.col-md-1 -->
-                </div><!-- /.row -->
-              </div><!-- /.cart-item -->
-            </div><!-- /.cart-wrapper -->
-          </div>
-
-          <div class="col-md-4">
-            <div class="pay-wrapper">
-              <h3 class="h4 no-mt" id="total-purchase">Total Belanja</h3><!-- /#total-purchase.h4 -->
+          <div class="col-md-10">
+            <h2 class="h3 no-mt page-title">Produk terbaru</h2><!-- /.h3 no-mt page-title -->
+            <div class="product-grid-wrapper">
               <div class="row">
-                <div class="col-md-6">Total Harga:</div><!-- /.col-md-6 -->
-                <div class="col-md-6"><h4 class="total-price no-mt"> Rp. 800.000</h4></div><!-- /.col-md-6 -->
-              </div><!-- /.row -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="thumbnail same-height">
+                    <img src="images/itunes.jpg" alt="product">
+                    <div class="caption">
+                      <h3 class="h4 box-title">Voucher iTunes $40</h3>
+                      <p>Rp. 500.000</p>
 
-              <a href="checkout.html" class="btn btn-danger u-full-width">Checkout</a>
-            </div><!-- /.pay-wrapper -->
-          </div><!-- /.col-md-4 -->
+                      <div class="action-wrapper">
+                        <a href="#" class="btn btn-info btn-buy" role="button">Beli Sekarang</a>
+                        <a href="#" class="btn btn-success btn-cart">Tambah ke Keranjang</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="thumbnail same-height">
+                    <img src="images/steam.jpg" alt="product">
+                    <div class="caption">
+                      <h3 class="h4 box-title">Voucher Steam Wallet $25</h3>
+                      <p>Rp. 200.000</p>
+
+                      <div class="action-wrapper">
+                        <a href="#" class="btn btn-info btn-buy" role="button">Beli Sekarang</a>
+                        <a href="#" class="btn btn-success btn-cart">Tambah ke Keranjang</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="thumbnail same-height">
+                    <img src="images/applemusic.jpg" alt="product">
+                    <div class="caption">
+                      <h3 class="h4 box-title">Voucher Apple Music $10</h3>
+                      <p>Rp. 200.000</p>
+
+                      <div class="action-wrapper">
+                        <a href="#" class="btn btn-info btn-buy" role="button">Beli Sekarang</a>
+                        <a href="#" class="btn btn-success btn-cart">Tambah ke Keranjang</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="thumbnail same-height">
+                    <img src="images/battlenet.jpg" alt="product">
+                    <div class="caption">
+                      <h3 class="h4 box-title">Voucher BattleNet $50</h3>
+                      <p>Rp. 650.000</p>
+
+                      <div class="action-wrapper">
+                        <a href="#" class="btn btn-info btn-buy" role="button">Beli Sekarang</a>
+                        <a href="#" class="btn btn-success btn-cart">Tambah ke Keranjang</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="thumbnail same-height">
+                    <img src="images/ebay.png" alt="product">
+                    <div class="caption">
+                      <h3 class="h4 box-title">Voucher Ebay $80</h3>
+                      <p>Rp. 900.000</p>
+
+                      <div class="action-wrapper">
+                        <a href="#" class="btn btn-info btn-buy" role="button">Beli Sekarang</a>
+                        <a href="#" class="btn btn-success btn-cart">Tambah ke Keranjang</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="thumbnail same-height">
+                    <img src="images/google_play_us.png" alt="product">
+                    <div class="caption">
+                      <h3 class="h4 box-title">Voucher Play Store $25</h3>
+                      <p>Rp. 400.000</p>
+
+                      <div class="action-wrapper">
+                        <a href="#" class="btn btn-info btn-buy" role="button">Beli Sekarang</a>
+                        <a href="#" class="btn btn-success btn-cart">Tambah ke Keranjang</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+            </div><!-- /.product-grid-wrapper -->
+          </div><!-- /.col-md-9 -->
         </div><!-- /.row -->
-      </div><!-- /.col-md-8 -->
       </main><!-- /.content -->
     </div><!-- /.container -->
 
