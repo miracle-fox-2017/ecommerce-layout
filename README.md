@@ -1,6 +1,8 @@
 # ecommerce-layout
 Layout ing E-commerce
 
+access here: https://fariswd.github.io/rocksell/
+
 Selling Rocket & Space Gear  
 Library use:  
 - Bootstrap- styling & grid system
