@@ -1,0 +1,49 @@
+.header .navbar {
+	margin-bottom: 0;
+	background: #d71149;
+}
+
+.featured-slider img {
+	width: 100%;
+}
+
+main.content {
+	margin-top: 3rem;
+}
+
+.product-grid-wrapper {
+	margin: 2rem 0;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color:#FFC107;
+}
+
+.site-title {
+	font-weight: bold;
+	color #fff;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+	color: #FFC107;
+}
+
+.u-full-width {
+	width: 100%;
+}
+
+.footer {
+	padding: 1rem;
+	text-align: center;
+	background: #00BCD4;
+	color: #fff;
+}
+
+.footer p {
+	margin: 0;
+}
