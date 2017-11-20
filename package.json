@@ -1,0 +1,20 @@
+{
+  "name": "ecommerce-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server --open=ecommerce.html --ignore=node_modules --host=localhost"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianmax/ecommerce-layout.git"
+  },
+  "author": "christian tobing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianmax/ecommerce-layout/issues"
+  },
+  "homepage": "https://github.com/ianmax/ecommerce-layout#readme"
+}
