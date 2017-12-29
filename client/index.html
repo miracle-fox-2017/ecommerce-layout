@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SmartShop</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/bulma.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css" type="text/css">
+
+    <script src="/assets/js/flicky.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+
+    // Get all "navbar-burger" elements
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(function ($el) {
+        $el.addEventListener('click', function () {
+
+          // Get the target from the "data-target" attribute
+          var target = $el.dataset.target;
+          var $target = document.getElementById(target);
+
+          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+          $el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+    });
+
+    // SLIDE SHOW
+
+      var carousel = document.querySelector('.carousel');
+      var flkty = new Flickity( carousel, {
+        imagesLoaded: true,
+        percentPosition: false,
+      });
+
+      var imgs = carousel.querySelectorAll('.carousel-cell img');
+      // get transform property
+      var docStyle = document.documentElement.style;
+      var transformProp = typeof docStyle.transform == 'string' ?
+        'transform' : 'WebkitTransform';
+
+      flkty.on( 'scroll', function() {
+        flkty.slides.forEach( function( slide, i ) {
+          var img = imgs[i];
+          var x = ( slide.target + flkty.x ) * -1/3;
+          img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar warnaSendiri">
+    <div class="navbar-brand">
+      <div class="navbar-item" >
+        <i class="fa fa-opencart fa-2x" aria-hidden="true"> </i>
+         <strong> SmartShop</strong>
+        <!-- <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"> -->
+      </div>
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">
+            Categories
+          </a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="#">
+              Electronik
+            </a>
+            <a class="navbar-item" href="#">
+              Hobies
+            </a>
+            <a class="navbar-item" href="#">
+              Otomotif
+            </a>
+            <a class="navbar-item" href="#">
+              Fashion
+            </a>
+            <a class="navbar-item" href="#">
+              Computer
+            </a>
+            <a class="navbar-item" href="#">
+              Handphone
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a class="button is-warning">
+                <span class="icon">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </span>
+                <span>Cart</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="columns">
+      <div class="column is-3">
+        <aside class="menu">
+          <ul class="menu-list">
+            <li><a>Sale </a></li>
+            <li>
+              <a>List Categories</a>
+              <ul>
+                <li><a>Members</a></li>
+                <li><a>Plugins</a></li>
+                <li><a>Add a member</a></li>
+              </ul>
+            </li>
+            <li>
+              <a>List Items</a>
+              <ul>
+                <li><a>Members</a></li>
+                <li><a>Plugins</a></li>
+                <li><a>Add a member</a></li>
+              </ul>
+            </li>
+            <li><a>Shopping Cart</a></li>
+            <li><a>Checkout</a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="column is-9">
+        <!-- HEADER -->
+        <section class="hero is-info is-small">
+              <!-- Flickity HTML init -->
+              <div class="carousel" data-flickity='{ "autoPlay": true }'>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
+                </div>
+              </div>
+        </section>
+        <!-- MAIN CONTENT
+          List Categories
+          List Item
+          Shopping Cart
+          Checkout -->
+        <section class="section">
+          <div class="container">
+            <!-- Featured Products -->
+              <h1 class="title has-text-centered">World Class Products</h1>
+              <div class="row">
+                <!-- Product 1 -->
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/pepper.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/jars.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/pot.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/teapot.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/pepper.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/jars.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/pot.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/teapot.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/pepper.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/jars.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/pot.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/teapot.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/pepper.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/jars.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="wadah col-xs-8 col-sm-4 col-md-2 col-md-1 flex-item">
+                  <a href="#">
+                    <img src="assets/images/pot.jpg" alt="">
+                  </a>
+                    <h3 class="subtitle">Product Name</h3>
+                    <p class="subtitle"><i class="fa fa-money" aria-hidden="true"></i> Rp 10000</p>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input type="number" class="input" type="text" value="1">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info">
+                          <i class="fa fa-shopping-bag " aria-hidden="true"> </i>
+                          <p>&nbsp;Buy</p>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- /.container -->
+          </div>
+        </section>
+      </div>
+    </div>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <p>
+              <strong>Template using Bulma Custom</strong> by SmartShop.
+            </p>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
